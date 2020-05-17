@@ -1,0 +1,33 @@
+1. C’est un descripteur de projet open source et gratuit qui permet la gestion des
+dépendances, la localisation des sources, ressources, webapp, la compilation et créations
+d’archives, l’exécution des tests unitaires, etc… Il est base sur le fichier pom.xml inclut au
+projet qui gère la gestion des dépendances.
+2. src/main/java
+src/main/ressources
+src/test/java
+src/test/ressources
+src/main/webapp
+target/classes
+target/test-classes
+3. Les 3 attributs nécessaires sont : groupId, artifactId, version.
+4. Concurrents : Gradle, SBT.
+5. TDD = test driven development. C'est une méthode de développement où l'on ecrit les tests avant d'écrire l'implémentation du code.
+On écrit ensuite l'implémentation du code pour valider tous les tests ecrits précedemment
+6. S(ingle responsability principle) O(pen close) L(iskov Substitution) I(nterface
+segregation) D(ependancy inversion). C'est une méthode de développement qui permet d'améliorer son code sans toucher à l'existant.
+On doit essayer de ne pas modifier ce qui a déjà été ecrit, mais plutôt ajouter du code.
+Les classes et méthodes doivent servir à une seule chose bien précise.
+7. Serveurs d’applications Java : Tomcat, Oracle, GlassFish
+8. src/main/webapp
+9. La directive page permet de définir des options de configuration, elle doit être
+intégrée dans toutes les pages généralement avant le tag html lui-même.
+La directuve include permet d’inclure des fichiers statistiques dans la JSP avant la
+génération de la servlet, particulièrement utile pour les élément commun à
+plusieurs pages (header, footer, …).
+La directive taglib permet de définir des tags personnalisés.
+Leur syntaxe est toujours : < %@ directive attribut=valeur …%>.
+10. O(bject) R(elationnal) M(apping) est une technique de programmation qui vise
+à créer l’illusion d’une BDD Orienté Objet à partir d’une BDD Relationnelle. C’est
+utile pour simplifier le code que l’on pourrait écrire en JDBC classique, gérer
+différents SGBD sans changer le code et même s’affranchir des requêtes SQL.
+Avec JAVA, le pionnier est Hibernate.
